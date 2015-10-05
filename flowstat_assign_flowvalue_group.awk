@@ -1,0 +1,1 @@
+BEGIN{FS=OFS="\t"}{floor=int($13);remain=$13-floor;if(remain >= 0.5){subgroup=0.5}else{subgroup=0};print $0, floor+subgroup}
